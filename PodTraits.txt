@@ -1,0 +1,10 @@
+Blindness Pod: Dark, Cold, Damp
+Dark Pod: Dark, Arid, Hot
+Fire Pod: Light, Arid, Warm
+Haste Pod: Dark, Normal, Cold
+Jump Pod: Light, Damp, Warm
+Lava Pod: Light, Arid, Hot
+Love Pod Light, Damp, Hot
+Speed Pod: Light, Normal, Cold
+Strength Pod: Dark, Normal, Warm
+Water Pod: Light, Damp, Cold

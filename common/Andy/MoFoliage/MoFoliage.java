@@ -18,15 +18,17 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkMod;
 
+@NetworkMod(clientSideRequired=true, serverSideRequired=false)
 @Mod(modid = Refrence.MOD_ID, name = Refrence.MOD_NAME, version = Refrence.VERSION)
 public class MoFoliage
 {
     @Instance(Refrence.MOD_ID)
     public static MoFoliage instance;
     
-    //@SidedProxy(clientSide = "Andy.MoFoliage.BaseClasses.ClientProxy", serverSide = "Andy.MoFoliage.BaseClasses.CommonProxy")
-    //public static CommonProxy proxy;
+    @SidedProxy(clientSide = "Andy.MoFoliage.BaseClasses.ClientProxy", serverSide = "Andy.MoFoliage.BaseClasses.CommonProxy")
+    public static CommonProxy proxy;
     
     public static MoFoCreativeTab tab = new MoFoCreativeTab(Refrence.MOD_NAME);
     
@@ -49,7 +51,9 @@ public class MoFoliage
     {
         System.out.println("[Mo' Foliage 2]: Load");
         
+        proxy.initRenderingAndTextures();
         
+        proxy.registerTileEnities();
     }
     
     @PostInit

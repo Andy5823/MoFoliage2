@@ -6,6 +6,7 @@ import java.util.Random;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+import Andy.MoFoliage.Refrences.BlockIds;
 import Andy.MoFoliage.Refrences.ItemIds;
 import Andy.MoFoliage.Refrences.Names;
 import Andy.MoFoliage.Refrences.Refrence;
@@ -88,6 +89,7 @@ implements IPlantable
     {
         super.updateTick(par1World, par2, par3, par4, par5Random);
 
+        System.out.println("Ticking");
         /*if (par1World.getBlockLightValue(par2, par3 + 1, par4) >= 9)
         {*/
             int l = par1World.getBlockMetadata(par2, par3, par4);
@@ -103,6 +105,19 @@ implements IPlantable
                     
                     handlePodTraits(par1World, l, par2, par3, par4);
                 }
+            }
+            else if(l == 3)
+            {
+                String ClosestPod = PodTraits.GetClosestPodTrait(podTrait1, podTrait2, podTrait3);
+                System.out.println(ClosestPod);
+                for (int i = 0; i < PodTraits.POD_TRAIT_ARRAY.length; ++i)
+                {
+                    if(PodTraits.POD_TRAIT_ARRAY[i] == ClosestPod)
+                    {
+                        par1World.setBlock(par2, par3, par4, BlockIds.POD_BLOCK_ID, i, 0);
+                    }
+                }
+                
             }
         //}
     }
@@ -210,10 +225,10 @@ implements IPlantable
         return ItemIds.POD_SEEDS_ID + Refrence.ITEM_ID_OFFSET;
     }
     
-    protected int getCropItem()
+    /*protected int getCropItem()
     {
         return PodTraits.GetClosestPodTrait(podTrait1, podTrait2, podTrait3);
-    }
+    }*/
     
     public void dropBlockAsItemWithChance(World par1World, int par2, int par3, int par4, int par5, float par6, int par7)
     {
@@ -261,7 +276,7 @@ implements IPlantable
     
     public int idDropped(int par1, Random par2Random, int par3)
     {
-        return par1 == 3 ? this.getCropItem() : this.getSeedItem();
+        return /*par1 == 3 ? this.getCropItem() :*/ this.getSeedItem();
     }
     
     public int quantityDropped(Random par1Random)
