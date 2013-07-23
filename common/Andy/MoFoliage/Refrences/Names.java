@@ -4,6 +4,7 @@ public class Names
 {
     //Blocks
     public static final String POD_SEEDS_BLOCK_NAME = "PodSeeds";
+    public static final String POD_BLOCK_NAME = "Pod";
     public static final String BLINDNESS_POD_BLOCK_NAME = "BlindnessPod";
     public static final String DARK_POD_BLOCK_NAME = "DarkPod";
     public static final String FIRE_POD_BLOCK_NAME = "FirePod";

@@ -3,6 +3,7 @@ package Andy.MoFoliage.Blocks;
 import java.util.List;
 
 import Andy.MoFoliage.MoFoliage;
+import Andy.MoFoliage.Refrences.Names;
 import Andy.MoFoliage.Refrences.Refrence;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -26,9 +27,10 @@ public class BlockPod extends Block
         float f = 0.2F;
         this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, f * 3.0F, 0.5F + f);
         this.setCreativeTab(MoFoliage.tab);
+        this.setUnlocalizedName(Names.POD_BLOCK_NAME);
         this.setHardness(0.0F);
         this.setStepSound(soundGrassFootstep);
-        this.disableStats();
+        //this.disableStats();
     }
     
     public void registerIcons(IconRegister par1IconRegister)

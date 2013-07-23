@@ -89,7 +89,7 @@ implements IPlantable
     {
         super.updateTick(par1World, par2, par3, par4, par5Random);
 
-        System.out.println("Ticking");
+        //System.out.println("Ticking");
         /*if (par1World.getBlockLightValue(par2, par3 + 1, par4) >= 9)
         {*/
             int l = par1World.getBlockMetadata(par2, par3, par4);
@@ -98,7 +98,7 @@ implements IPlantable
             {
                 float f = this.getGrowthRate(par1World, par2, par3, par4);
 
-                if (par5Random.nextInt((int)(25.0F / f) + 1) == 0)
+                if (par5Random.nextInt((int)(/*25.0F / f*/ 5F) + 1) == 0)
                 {
                     ++l;
                     par1World.setBlockMetadataWithNotify(par2, par3, par4, l, 2);
