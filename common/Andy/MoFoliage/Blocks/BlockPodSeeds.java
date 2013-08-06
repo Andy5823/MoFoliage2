@@ -6,6 +6,7 @@ import java.util.Random;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+import Andy.MoFoliage.BaseClasses.WorldChecker;
 import Andy.MoFoliage.Refrences.BlockIds;
 import Andy.MoFoliage.Refrences.ItemIds;
 import Andy.MoFoliage.Refrences.Names;
@@ -139,11 +140,11 @@ implements IPlantable
                 break;
                 
             case 2:
-                if(par1World.getBiomeGenForCoords(x, z).isHighHumidity())
+                if(WorldChecker.checkForWater(par1World, x, y, z) <= 2)
                 {
                     podTrait2 = "Damp";
                 }
-                else if(par1World.getBiomeGenForCoords(x, z).rainfall >= 0.3F)
+                else if(WorldChecker.checkForWater(par1World, x, y, z) <= 4)
                 {
                     podTrait2 = "Normal";
                 }
@@ -154,11 +155,11 @@ implements IPlantable
                 System.out.println(podTrait2);
                 break;
             case 3:
-                if(par1World.getBiomeGenForCoords(x, z).temperature > 1.0F)
+                if(WorldChecker.checkForLava(par1World, x, y, z) <= 2)
                 {
                     podTrait3 = "Hot";
                 }
-                else if(par1World.getBiomeGenForCoords(x, z).temperature <= 1.0F && par1World.getBiomeGenForCoords(x, z).temperature >= 0.1F)
+                else if(WorldChecker.checkForLava(par1World, x, y, z) <= 4)
                 {
                     podTrait3 = "Warm";
                 }

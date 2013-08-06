@@ -16,38 +16,62 @@ public class WorldChecker
             int a1;
             if(a < 6)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a;
                 x1 = x1 + a1;
                 if(world.getBlockId(x1, y, z1) == Block.waterStill.blockID || world.getBlockId(x1, y, z1) == Block.waterMoving.blockID)
                 {
-                    WaterCount = WaterCount + a1;
+                    if(WaterCount == 0 || a1 < WaterCount)
+                    {
+                        WaterCount = a1;
+                    }
+                    //WaterCount = WaterCount + a1;
                 }
             }
             else if(a < 11)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a - 5;
                 x1 = x1 - a1;
                 if(world.getBlockId(x1, y, z1) == Block.waterStill.blockID || world.getBlockId(x1, y, z1) == Block.waterMoving.blockID)
                 {
-                    WaterCount = WaterCount + a1;
+                    if(WaterCount == 0 || a1 < WaterCount)
+                    {
+                        WaterCount = a1;
+                    }
+                    //WaterCount = WaterCount + a1;
                 }
             }
             else if(a < 16)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a - 10;
                 z1 = z1 + a1;
                 if(world.getBlockId(x1, y, z1) == Block.waterStill.blockID || world.getBlockId(x1, y, z1) == Block.waterMoving.blockID)
                 {
-                    WaterCount = WaterCount + a1;
+                    if(WaterCount == 0 || a1 < WaterCount)
+                    {
+                        WaterCount = a1;
+                    }
+                    //WaterCount = WaterCount + a1;
                 }
             }
             else if(a < 21)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a - 15;
                 z1 = z1 - a1;
                 if(world.getBlockId(x1, y, z1) == Block.waterStill.blockID || world.getBlockId(x1, y, z1) == Block.waterMoving.blockID)
                 {
-                    WaterCount = WaterCount + a1;
+                    if(WaterCount == 0 || a1 < WaterCount)
+                    {
+                        WaterCount = a1;
+                    }
+                    //WaterCount = WaterCount + a1;
                 }
             }
         }
@@ -66,38 +90,62 @@ public class WorldChecker
             int a1;
             if(a < 6)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a;
                 x1 = x1 + a1;
                 if(world.getBlockId(x1, y, z1) == Block.lavaStill.blockID || world.getBlockId(x1, y, z1) == Block.lavaMoving.blockID)
                 {
-                    LavaCount = LavaCount + a1;
+                    if(LavaCount == 0 || a1 < LavaCount)
+                    {
+                        LavaCount = a1;
+                    }
+                    //LavaCount = LavaCount + a1;
                 }
             }
             else if(a < 11)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a - 5;
                 x1 = x1 - a1;
                 if(world.getBlockId(x1, y, z1) == Block.lavaStill.blockID || world.getBlockId(x1, y, z1) == Block.lavaMoving.blockID)
                 {
-                    LavaCount = LavaCount + a1;
+                    if(LavaCount == 0 || a1 < LavaCount)
+                    {
+                        LavaCount = a1;
+                    }
+                    //LavaCount = LavaCount + a1;
                 }
             }
             else if(a < 16)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a - 10;
                 z1 = z1 + a1;
                 if(world.getBlockId(x1, y, z1) == Block.lavaStill.blockID || world.getBlockId(x1, y, z1) == Block.lavaMoving.blockID)
                 {
-                    LavaCount = LavaCount + a1;
+                    if(LavaCount == 0 || a1 < LavaCount)
+                    {
+                        LavaCount = a1;
+                    }
+                    //LavaCount = LavaCount + a1;
                 }
             }
             else if(a < 21)
             {
+                x1 = x;
+                z1 = z;
                 a1 = a - 15;
                 z1 = z1 - a1;
                 if(world.getBlockId(x1, y, z1) == Block.lavaStill.blockID || world.getBlockId(x1, y, z1) == Block.lavaMoving.blockID)
                 {
-                    LavaCount = LavaCount + a1;
+                    if(LavaCount == 0 || a1 < LavaCount)
+                    {
+                        LavaCount = a1;
+                    }
+                    //LavaCount = LavaCount + a1;
                 }
             }
         }
