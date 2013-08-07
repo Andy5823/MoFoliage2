@@ -1,0 +1,5 @@
+=============================================================================================================
+                                                 UPDATE LOG
+=============================================================================================================
+
+06/08/2013: Added Update Log, Updated WorldChecker.java, Fixed WaterCount method, Fixed LavaCount method, Updated HandlePodTraits method for Pod Seeds.
