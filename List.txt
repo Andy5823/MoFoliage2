@@ -1,0 +1,6 @@
+plants growing dependent on conditions
+Mixing mechanics
+book that gives info
+multiblock that alters conditions
+a possibilty for other compnents for mixing
+testing :P - also my paint.net is no longer working with windows 8, so may need to use gimp or sommin
