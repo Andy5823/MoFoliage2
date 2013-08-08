@@ -2,5 +2,6 @@
                                                  UPDATE LOG
 =============================================================================================================
 
-07/08/2013: Updated Package Names,
+08/08/2013: Added Crystalized Iron, Added Stained Glass, Implemented Connected Textures to Stained Glass
+07/08/2013: Updated Package Names, Fixed Pod Metadata, Added ItemPod.java.
 06/08/2013: Added Update Log, Updated WorldChecker.java, Fixed WaterCount method, Fixed LavaCount method, Updated HandlePodTraits method for Pod Seeds.

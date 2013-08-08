@@ -20,6 +20,8 @@ public class Names
     public static final String WATER_POD_BLOCK_NAME = "WaterPod";
     public static final String FAILED_POD_BLOCK_NAME = "FailedPod";
     public static final String PLANT_MIXER_NAME = "PlantMixer";
+    public static final String CRYSTALIZED_IRON_NAME = "CrystalizedIron";
+    public static final String STAINED_GLASS_NAME = "MultiGlass";
     
     //Items
     public static final String POD_SEEDS_NAME = "PodSeeds";
