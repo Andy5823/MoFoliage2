@@ -1,4 +1,4 @@
-package MoFoliage2.Renders.Blocks;
+package MoFoliage2.Client.Renders.Blocks;
 
 import org.lwjgl.opengl.GL11;
 

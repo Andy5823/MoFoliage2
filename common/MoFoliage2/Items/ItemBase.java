@@ -1,5 +1,6 @@
 package MoFoliage2.Items;
 
+import MoFoliage2.MoFoliage;
 import MoFoliage2.Refrences.Refrence;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemBase extends Item
     {
         super(Id);
         maxStackSize = 1;
+        this.setCreativeTab(MoFoliage.tab);
         setNoRepair();
     }
     

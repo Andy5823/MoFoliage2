@@ -19,6 +19,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.network.NetworkRegistry;
 
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 @Mod(modid = Refrence.MOD_ID, name = Refrence.MOD_NAME, version = Refrence.VERSION)
@@ -50,6 +51,8 @@ public class MoFoliage
     public void load(FMLInitializationEvent event)
     {
         System.out.println("[Mo' Foliage 2]: Load");
+        
+        NetworkRegistry.instance().registerGuiHandler(instance, proxy);
         
         proxy.initRenderingAndTextures();
         

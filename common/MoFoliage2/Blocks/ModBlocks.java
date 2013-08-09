@@ -5,6 +5,8 @@ import MoFoliage2.Refrences.BlockIds;
 import MoFoliage2.Refrences.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -52,6 +54,8 @@ public class ModBlocks
     
     public static void InitializeRecipes()
     {
-        
+        GameRegistry.addRecipe(new ItemStack(StainedGlass, 8), new Object[]{
+            "GGG", "GDG", "GGG", 'G', Block.glass, 'D', new ItemStack(Item.dyePowder, 1, 2)
+        });
     }
 }

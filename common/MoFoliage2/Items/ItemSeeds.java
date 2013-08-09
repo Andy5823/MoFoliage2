@@ -10,7 +10,6 @@ public class ItemSeeds extends ItemBase
     {
         super(Id);
         this.setUnlocalizedName(Names.POD_SEEDS_NAME);
-        this.setCreativeTab(MoFoliage.tab);
         this.setMaxStackSize(64);
     }
 }

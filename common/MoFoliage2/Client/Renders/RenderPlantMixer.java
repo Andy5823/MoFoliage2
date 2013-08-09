@@ -1,4 +1,4 @@
-package MoFoliage2.Renders;
+package MoFoliage2.Client.Renders;
 
 import org.lwjgl.opengl.GL11;
 

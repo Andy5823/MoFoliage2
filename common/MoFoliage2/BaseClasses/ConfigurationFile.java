@@ -18,7 +18,8 @@ public class ConfigurationFile
         BlockIds.STAINED_GLASS_ID = config.getBlock("Stained Glass Id", 2004).getInt();
         
         //Items
-        ItemIds.POD_SEEDS_ID = config.getItem("Pod Seeds ID", 10001).getInt();
+        ItemIds.POD_SEEDS_ID = config.getItem("Pod Seeds Id", 10001).getInt();
+        ItemIds.CRYSTALIZED_IRON_ID = config.getItem("Crystalized Iron Id", 10002).getInt();
         
         config.save();
     }

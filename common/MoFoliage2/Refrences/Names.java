@@ -33,6 +33,10 @@ public class Names
     public static final String LAVA_POD_NAME = "LavaPod";
     public static final String LOVE_POD_NAME = "LovePod";
     public static final String SPEED_POD_NAME = "SpeedPod";
-    public static final String STRENGTH_POD_NAME = "StrewngthPod";
+    public static final String STRENGTH_POD_NAME = "StrengthPod";
     public static final String WATER_POD_NAME = "WaterPod";
+    public static final String CRYSTALIZED_IRON_INGOT_NAME = "CrystalizedIron";
+    
+    //Gui Elements
+    public static final String CONTAINER_PLANT_MIXER = "Plant Mixer";
 }

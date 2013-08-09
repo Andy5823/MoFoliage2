@@ -3,11 +3,11 @@ package MoFoliage2.BaseClasses;
 import net.minecraftforge.client.MinecraftForgeClient;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import MoFoliage2.Client.Renders.RenderPlantMixer;
+import MoFoliage2.Client.Renders.Blocks.BlockRenderPlantMixer;
 import MoFoliage2.Refrences.BlockIds;
 import MoFoliage2.Refrences.Refrence;
 import MoFoliage2.Refrences.RenderIds;
-import MoFoliage2.Renders.RenderPlantMixer;
-import MoFoliage2.Renders.Blocks.BlockRenderPlantMixer;
 import MoFoliage2.TileEntities.TileEntityPlantMixer;
 
 public class ClientProxy extends CommonProxy
