@@ -11,5 +11,4 @@ public class ItemCrystalizedIron extends ItemBase
         this.setUnlocalizedName(Names.CRYSTALIZED_IRON_INGOT_NAME);
         this.setMaxStackSize(64);
     }
-    
 }

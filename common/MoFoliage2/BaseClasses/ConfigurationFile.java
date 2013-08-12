@@ -20,6 +20,7 @@ public class ConfigurationFile
         //Items
         ItemIds.POD_SEEDS_ID = config.getItem("Pod Seeds Id", 10001).getInt();
         ItemIds.CRYSTALIZED_IRON_ID = config.getItem("Crystalized Iron Id", 10002).getInt();
+        ItemIds.POD_ID = config.getItem("Pod Item Id", 10003).getInt();
         
         config.save();
     }

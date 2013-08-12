@@ -2,6 +2,7 @@
                                                  UPDATE LOG
 =============================================================================================================
 
+12/08/2013: Remove CreatorsCustard.png, Added Pod Items
 09/08/2013: Moved Renders into MoFoliage2.Client package, Setup Plant Mixer Gui
 08/08/2013: Added Crystalized Iron, Added Stained Glass, Implemented Connected Textures to Stained Glass
 07/08/2013: Updated Package Names, Fixed Pod Metadata, Added ItemPod.java.

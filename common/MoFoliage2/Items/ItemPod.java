@@ -30,21 +30,4 @@ public class ItemPod extends ItemBlock
     {
         return Names.POD_NAME_ARRAY[itemstack.getItemDamage()];
     }
-    
-    public void registerIcons(IconRegister par1IconRegister)
-    {
-        this.iconArray = new Icon[PodTraits.POD_TRAIT_ARRAY.length];
-
-        for (int i = 0; i < this.iconArray.length; ++i)
-        {
-            //System.out.println(PodTraits.POD_TRAIT_ARRAY[i]);
-            this.iconArray[i] = par1IconRegister.registerIcon(Refrence.MOD_ID + ":" + PodTraits.POD_TRAIT_ARRAY[i]);
-        }
-    }
-    
-    @SideOnly(Side.CLIENT)
-    public Icon getIcon(int par1, int par2)
-    {
-        return iconArray[par2];
-    }
 }

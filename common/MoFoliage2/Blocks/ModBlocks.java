@@ -1,5 +1,6 @@
 package MoFoliage2.Blocks;
 
+import MoFoliage2.BaseClasses.MetadataNameHandler;
 import MoFoliage2.Items.ItemPod;
 import MoFoliage2.Refrences.BlockIds;
 import MoFoliage2.Refrences.Names;
@@ -42,7 +43,7 @@ public class ModBlocks
     
     public static void InitializeNames()
     {
-        MetadataNameHandler.HandleMetaDataNames();
+        MetadataNameHandler.HandleMetadataNames();
         
         LanguageRegistry.addName(PodSeeds, "Pod Seeds");
         LanguageRegistry.addName(PlantMixer, "Plant Mixer");
