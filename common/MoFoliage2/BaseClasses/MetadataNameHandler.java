@@ -28,5 +28,19 @@ public class MetadataNameHandler
             
             LanguageRegistry.addName(Pod, Names.POD_NAME_ARRAY[meta]);
         }
+        
+        for(int meta = 0; meta < 9; meta++)
+        {
+            ItemStack Pod = new ItemStack(ModItems.Pod, 1, meta+100);
+            
+            LanguageRegistry.addName(Pod, Names.POD_FOOD_NAME_ARRAY[meta]);
+        }
+        
+        for(int meta = 0; meta < 10; meta++)
+        {
+            ItemStack Pod = new ItemStack(ModItems.Pod, 1, meta+200);
+            
+            LanguageRegistry.addName(Pod, "Shining " + Names.POD_NAME_ARRAY[meta]);
+        }
     }
 }

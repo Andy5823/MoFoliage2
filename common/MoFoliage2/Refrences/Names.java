@@ -4,6 +4,7 @@ public class Names
 {
     //Name Arrays
     public static final String[] POD_NAME_ARRAY = {"Blindness Pod", "Dark Pod", "Fire Pod", "Haste Pod", "Jump Pod", "Lava Pod", "Love Pod", "Speed Pod", "Strength Pod", "Water Pod", ""};
+    public static final String[] POD_FOOD_NAME_ARRAY = {"Bowl O' Air", "Powah Powder", "Demonic Bean Soup", "Gaseous Jelly", "High Flyer Soup", "Miner's Mush", "Nauseating Blend", "Loving Blend", "Plant Custard"};
     
     //Blocks
     public static final String POD_SEEDS_BLOCK_NAME = "PodSeeds";

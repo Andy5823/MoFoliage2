@@ -36,7 +36,7 @@ public class BlockPod extends BlockBase
     public void registerIcons(IconRegister par1IconRegister)
     {
         this.iconArray = new Icon[PodTraits.POD_TRAIT_ARRAY.length];
-
+        
         for (int i = 0; i < this.iconArray.length; ++i)
         {
             //System.out.println(PodTraits.POD_TRAIT_ARRAY[i]);

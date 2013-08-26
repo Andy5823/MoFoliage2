@@ -1,9 +1,9 @@
-Bowl O Air - Jump + Jump, Gives massive jump boost
-Creators custard - Love + Strenth, Gives regen 1 and strenth 1 for 10 seconds
-DemonicBeanSoup- Fire + Lava = Fire Resistance for 30seconds, Speed for 10
-Gaseos Jelly - Jump + Water = Jump Boost 15 seconds, Nausua 10
-High Flyer - Speed + Jump = Speed 2 15 seconds, Jump Boost 1 15seconds, Haste 10seconds
-Miners Mush - Blindness + Haste = Night vision 20 seconds, Haste 15 seconds
-Nausiating Blend - Darkness + Speed = Nausia 60 seconds
-Loving Blend - Darkness + Love = Regen 3 5 seconds
-Plant Custard - No effect just 2 hunger, 1 heart (all foods do this)
+Bowl O Air - Jump + Jump, Gives massive jump boost = 100
+Powah Powder - Love + Strenth, Gives regen 1 and strenth 1 for 10 seconds = 101
+Demonic Bean Soup- Fire + Lava = Fire Resistance for 30seconds, Speed for 10 = 102
+Gaseous Jelly - Jump + Water = Jump Boost 15 seconds, Nausua 10 = 103
+High Flyer Soup - Speed + Jump = Speed 2 15 seconds, Jump Boost 1 15seconds, Haste 10 seconds = 204
+Miners Mush - Blindness + Haste = Night vision 20 seconds, Haste 15 seconds = 105
+Nauseating Blend - Darkness + Speed = Nausia 60 seconds = 106
+Loving Blend - Darkness + Love = Regen 3 5 seconds = 107
+Plant Custard - No effect just 2 hunger, 1 heart (all foods do this) = 108
