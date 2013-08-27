@@ -23,6 +23,7 @@ public class Names
     public static final String PLANT_MIXER_NAME = "PlantMixer";
     public static final String CRYSTALIZED_IRON_NAME = "CrystalizedIron";
     public static final String STAINED_GLASS_NAME = "MultiGlass";
+    public static final String GREEN_HOUSE_NAME = "GreenHouse";
     
     //Items
     public static final String POD_SEEDS_NAME = "PodSeeds";

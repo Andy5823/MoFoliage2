@@ -21,7 +21,6 @@ public class BlockPlantMixer extends BlockBaseTile
     public BlockPlantMixer(int Id)
     {
         super(Id, Material.wood);
-        this.setCreativeTab(MoFoliage.tab);
         this.setUnlocalizedName(Names.PLANT_MIXER_NAME);
     }
     

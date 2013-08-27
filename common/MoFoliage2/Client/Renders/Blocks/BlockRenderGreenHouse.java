@@ -1,27 +1,31 @@
 package MoFoliage2.Client.Renders.Blocks;
 
-import org.lwjgl.opengl.GL11;
-
-import cpw.mods.fml.client.FMLClientHandler;
-import MoFoliage2.Models.ModelPlantMixer;
-import MoFoliage2.Refrences.Textures;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
+import net.minecraftforge.client.IItemRenderer.ItemRenderType;
+import net.minecraftforge.client.IItemRenderer.ItemRendererHelper;
 
-public class BlockRenderPlantMixer implements IItemRenderer 
+import org.lwjgl.opengl.GL11;
+
+
+import MoFoliage2.Models.ModelGreenHouse;
+import MoFoliage2.Refrences.Textures;
+import cpw.mods.fml.client.FMLClientHandler;
+
+public class BlockRenderGreenHouse implements IItemRenderer 
 {
-    private ModelPlantMixer BlockModel;
+    private ModelGreenHouse BlockModel;
     
-    public BlockRenderPlantMixer() 
+    public BlockRenderGreenHouse() 
     {
-        BlockModel = new ModelPlantMixer();
+        BlockModel = new ModelGreenHouse();
     }
     
     private void renderItemBlock(float x, float y, float z, boolean needsRotating)
     {
         Tessellator tesselator = Tessellator.instance;
-        FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_PLANT_MIXER);
+        FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_GREEN_HOUSE);
         GL11.glPushMatrix(); //start
         if(needsRotating)
         {
@@ -33,7 +37,13 @@ public class BlockRenderPlantMixer implements IItemRenderer
             GL11.glTranslatef(x, y + 1.2F/*+ 1.1F*/, z);
             GL11.glRotatef(180, 1, 0, 0);
         }
-        BlockModel.renderModel(0.0625F);
+        
+        boolean isLeft = false;
+        boolean isRight = false;
+        boolean isForward = false;
+        boolean isBackward = false;
+        
+        BlockModel.renderModel(0.0625F, isLeft, isRight, isForward, isBackward);
         GL11.glPopMatrix(); //end
      }
     
@@ -77,7 +87,6 @@ public class BlockRenderPlantMixer implements IItemRenderer
            {
                return;
            }
-        }
-    }
+         }
+     }
 }
-

@@ -14,6 +14,7 @@ public class Textures
     
     //Model Textures
     public static ResourceLocation MODEL_PLANT_MIXER = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "PlantMixer.png");
+    public static ResourceLocation MODEL_GREEN_HOUSE = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "GlassHouse.png");
     
     //Gui Textures
     public static ResourceLocation GUI_PLANT_MIXER = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "MixerGui.png");

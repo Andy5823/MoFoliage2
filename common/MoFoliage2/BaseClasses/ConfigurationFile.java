@@ -16,6 +16,7 @@ public class ConfigurationFile
         BlockIds.PLANT_MIXER_ID = config.getBlock("Plant Mixer ID", 2002).getInt();
         BlockIds.CRYSTALIZED_IRON_ID = config.getBlock("Crystalized Iron Id", 2003).getInt();
         BlockIds.STAINED_GLASS_ID = config.getBlock("Stained Glass Id", 2004).getInt();
+        BlockIds.GREEN_HOUSE_ID = config.getBlock("Green House Id", 2005).getInt();
         
         //Items
         ItemIds.POD_SEEDS_ID = config.getItem("Pod Seeds Id", 10001).getInt();

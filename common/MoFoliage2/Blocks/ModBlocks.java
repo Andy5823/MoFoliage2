@@ -18,6 +18,7 @@ public class ModBlocks
     public static Block PlantMixer;
     public static Block CrystalizedIron;
     public static Block StainedGlass;
+    public static Block GreenHouse;
     
     public static void InitializeBlocks()
     {
@@ -26,6 +27,7 @@ public class ModBlocks
         PlantMixer = new BlockPlantMixer(BlockIds.PLANT_MIXER_ID);
         CrystalizedIron = new BlockCrystalizedIron(BlockIds.CRYSTALIZED_IRON_ID);
         StainedGlass = new BlockStainedGlass(BlockIds.STAINED_GLASS_ID);
+        GreenHouse = new BlockGreenHouse(BlockIds.GREEN_HOUSE_ID);
         
         RegisterBlocks();
     }
@@ -37,6 +39,7 @@ public class ModBlocks
         GameRegistry.registerBlock(PlantMixer);
         GameRegistry.registerBlock(CrystalizedIron);
         GameRegistry.registerBlock(StainedGlass);
+        GameRegistry.registerBlock(GreenHouse);
         
         InitializeNames();
     }
@@ -49,6 +52,7 @@ public class ModBlocks
         LanguageRegistry.addName(PlantMixer, "Plant Mixer");
         LanguageRegistry.addName(CrystalizedIron, "Crystalized Iron");
         LanguageRegistry.addName(StainedGlass, "Stained Glass");
+        LanguageRegistry.addName(GreenHouse, "Miniture Green House");
         
         InitializeRecipes();
     }

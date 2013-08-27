@@ -4,6 +4,7 @@ import MoFoliage2.Client.Gui.GuiPlantMixer;
 import MoFoliage2.Containers.ContainerPlantMixer;
 import MoFoliage2.Refrences.GuiIds;
 import MoFoliage2.Refrences.Names;
+import MoFoliage2.TileEntities.TileEntityGreenHouse;
 import MoFoliage2.TileEntities.TileEntityPlantMixer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
@@ -20,6 +21,7 @@ public class CommonProxy implements IGuiHandler
     public void registerTileEnities()
     {
         GameRegistry.registerTileEntity(TileEntityPlantMixer.class, Names.PLANT_MIXER_NAME);
+        GameRegistry.registerTileEntity(TileEntityGreenHouse.class, Names.GREEN_HOUSE_NAME);
     }
     
     @Override

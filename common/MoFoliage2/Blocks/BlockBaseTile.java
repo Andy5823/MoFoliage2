@@ -1,5 +1,6 @@
 package MoFoliage2.Blocks;
 
+import MoFoliage2.MoFoliage;
 import MoFoliage2.Refrences.Refrence;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public abstract class BlockBaseTile extends BlockContainer
     public BlockBaseTile(int id, Material material)
     {
         super(id, material);
+        this.setCreativeTab(MoFoliage.tab);
     }
     
     @SideOnly(Side.CLIENT)
