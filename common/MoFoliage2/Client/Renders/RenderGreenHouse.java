@@ -56,6 +56,11 @@ public class RenderGreenHouse extends TileEntitySpecialRenderer
         GL11.glRotatef(j, 0.0F, 1.0F, 0F);
         FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_GREEN_HOUSE);
         GL11.glPushMatrix();
+        GL11.glPushAttrib(GL11.GL_ENABLE_BIT);
+        //GL11.glEnable(GL11.GL_CULL_FACE);
+        //GL11.glDisable(GL11.GL_LIGHTING);
+        GL11.glEnable(GL11.GL_BLEND);
+        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         
         boolean isLeft = tileentity.canConnectLeft();
         boolean isRight = tileentity.canConnectRight();
@@ -64,6 +69,7 @@ public class RenderGreenHouse extends TileEntitySpecialRenderer
         
         aModel.renderModel(0.0625F, isLeft, isRight, isForward, isBackward);
         
+        GL11.glPopAttrib();
         GL11.glPopMatrix();
         GL11.glPopMatrix();
         

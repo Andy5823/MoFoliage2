@@ -51,7 +51,7 @@ public class ItemPodFood extends ItemBaseFood
     {
         if(par1ItemStack.getItemDamage() >= 200)
         {
-            return PodTraits.POD_TRAIT_ARRAY[par1ItemStack.getItemDamage()-200];
+            return "Shining"+PodTraits.POD_TRAIT_ARRAY[par1ItemStack.getItemDamage()-200];
         }
         if(par1ItemStack.getItemDamage() >= 100)
         {
@@ -110,53 +110,52 @@ public class ItemPodFood extends ItemBaseFood
         {
             case 100:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.jump.id, 200, 3));
-                par3EntityPlayer.heal(2);
                 break;
                 
             case 101:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.regeneration.id, 200, 0));
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 200, 0));
-                par3EntityPlayer.heal(2);
                 break;
                 
             case 102:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 600, 0));
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 200, 0));
-                par3EntityPlayer.heal(2);
                 break;
                 
             case 103:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.jump.id, 300, 0));  //Subject To Change
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, 200, 0));
-                par3EntityPlayer.heal(2);
                 break;
                 
             case 104:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.jump.id, 300, 0)); //Subject To Change
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 200, 0));
-                par3EntityPlayer.heal(2);
                 break;
                 
             case 105:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.nightVision.id, 400, 0));
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 300, 0));
-                par3EntityPlayer.heal(2);
                 break;
                 
             case 106:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.confusion.id, 1200, 0));
-                par3EntityPlayer.heal(2);
                 break;
                 
             case 107:
                 par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.regeneration.id, 100, 2));
-                par3EntityPlayer.heal(2);
                 break;
                 
             default:
-                par3EntityPlayer.heal(2);
                 super.onFoodEaten(par1ItemStack, par2World, par3EntityPlayer);
                 break;
+        }
+        if(par3EntityPlayer.func_110143_aJ() == 20)
+        {
+            par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 0));
+        }
+        else
+        {
+            par3EntityPlayer.heal(2);
         }
     }
 

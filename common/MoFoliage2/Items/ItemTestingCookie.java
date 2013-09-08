@@ -5,7 +5,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import MoFoliage2.MoFoliage;
-import MoFoliage2.BaseClasses.WorldChecker;
+import MoFoliage2.Core.WorldChecker;
 
 public class ItemTestingCookie extends ItemBase
 {

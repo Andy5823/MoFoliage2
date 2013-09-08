@@ -1,4 +1,4 @@
-package MoFoliage2.BaseClasses;
+package MoFoliage2.Core;
 
 import net.minecraft.util.ResourceLocation;
 import MoFoliage2.Refrences.Refrence;

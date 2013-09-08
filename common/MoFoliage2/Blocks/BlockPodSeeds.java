@@ -6,7 +6,7 @@ import java.util.Random;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-import MoFoliage2.BaseClasses.WorldChecker;
+import MoFoliage2.Core.WorldChecker;
 import MoFoliage2.Refrences.BlockIds;
 import MoFoliage2.Refrences.ItemIds;
 import MoFoliage2.Refrences.Names;

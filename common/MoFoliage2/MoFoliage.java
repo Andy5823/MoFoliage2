@@ -1,11 +1,12 @@
 package MoFoliage2;
 
-import MoFoliage2.BaseClasses.ClientProxy;
-import MoFoliage2.BaseClasses.CommonProxy;
-import MoFoliage2.BaseClasses.ConfigurationFile;
-import MoFoliage2.BaseClasses.MoFoCreativeTab;
 import MoFoliage2.Blocks.ModBlocks;
 import MoFoliage2.Blocks.PodTraits;
+import MoFoliage2.Core.ClientProxy;
+import MoFoliage2.Core.CommonProxy;
+import MoFoliage2.Core.ConfigurationFile;
+import MoFoliage2.Core.MoFoCreativeTab;
+import MoFoliage2.Core.VillagerRegistring;
 import MoFoliage2.Items.ModItems;
 import MoFoliage2.Refrences.Refrence;
 import net.minecraftforge.common.Configuration;
@@ -28,7 +29,7 @@ public class MoFoliage
     @Instance(Refrence.MOD_ID)
     public static MoFoliage instance;
     
-    @SidedProxy(clientSide = "MoFoliage2.BaseClasses.ClientProxy", serverSide = "MoFoliage2.BaseClasses.CommonProxy")
+    @SidedProxy(clientSide = "MoFoliage2.Core.ClientProxy", serverSide = "MoFoliage2.Core.CommonProxy")
     public static CommonProxy proxy;
     
     public static MoFoCreativeTab tab = new MoFoCreativeTab(Refrence.MOD_NAME);
@@ -41,6 +42,8 @@ public class MoFoliage
         Configuration config = new Configuration(event.getSuggestedConfigurationFile());
         
         ConfigurationFile.HandleConfig(config);
+        
+        VillagerRegistring.registerVillagers();
         
         ModBlocks.InitializeBlocks();
         

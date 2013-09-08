@@ -1,6 +1,8 @@
-package MoFoliage2.BaseClasses;
+package MoFoliage2.Core;
 
+import MoFoliage2.Client.Gui.GuiGreenHouse;
 import MoFoliage2.Client.Gui.GuiPlantMixer;
+import MoFoliage2.Containers.ContainerGreenHouse;
 import MoFoliage2.Containers.ContainerPlantMixer;
 import MoFoliage2.Refrences.GuiIds;
 import MoFoliage2.Refrences.Names;
@@ -32,6 +34,12 @@ public class CommonProxy implements IGuiHandler
             TileEntityPlantMixer tilePlantMixer = (TileEntityPlantMixer)world.getBlockTileEntity(x, y, z);
             return new ContainerPlantMixer(player.inventory, tilePlantMixer);
         }
+        
+        if(ID == GuiIds.GREEN_HOUSE)
+        {
+            TileEntityGreenHouse tileGreenHouse = (TileEntityGreenHouse)world.getBlockTileEntity(x, y, z);
+            return new ContainerGreenHouse(player.inventory, tileGreenHouse);
+        }
         return null;
     }
 
@@ -42,6 +50,12 @@ public class CommonProxy implements IGuiHandler
         {
             TileEntityPlantMixer tilePlantMixer = (TileEntityPlantMixer)world.getBlockTileEntity(x, y, z);
             return new GuiPlantMixer(player.inventory, tilePlantMixer);
+        }
+        
+        if(ID == GuiIds.GREEN_HOUSE)
+        {
+            TileEntityGreenHouse tileGreenHouse = (TileEntityGreenHouse)world.getBlockTileEntity(x, y, z);
+            return new GuiGreenHouse(player.inventory, tileGreenHouse);
         }
         return null;
     }

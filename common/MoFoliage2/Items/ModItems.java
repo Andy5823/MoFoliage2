@@ -1,7 +1,7 @@
 package MoFoliage2.Items;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
-import MoFoliage2.BaseClasses.MetadataNameHandler;
+import MoFoliage2.Core.MetadataNameHandler;
 import MoFoliage2.Refrences.FoodStats;
 import MoFoliage2.Refrences.ItemIds;
 import net.minecraft.item.Item;

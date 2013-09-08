@@ -1,4 +1,4 @@
-package MoFoliage2.Containers;
+package MoFoliage2.Containers.Slots;
 
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;

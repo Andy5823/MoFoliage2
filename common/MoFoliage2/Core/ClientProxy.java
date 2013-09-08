@@ -1,4 +1,4 @@
-package MoFoliage2.BaseClasses;
+package MoFoliage2.Core;
 
 import net.minecraftforge.client.MinecraftForgeClient;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -16,8 +16,6 @@ import MoFoliage2.TileEntities.TileEntityPlantMixer;
 
 public class ClientProxy extends CommonProxy
 {
-    public static int renderPass;
-    
     public void initRenderingAndTextures()
     {
         System.out.println("["+Refrence.MOD_NAME+"]: Rendering and Textures");

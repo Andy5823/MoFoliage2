@@ -2,6 +2,8 @@
                                                  UPDATE LOG
 =============================================================================================================
 
+08/09/2013: Renamed MoFoliage2.BaseClasses to MoFoliage2.Core, Added New Village and New Village House for it to live in,
+ Changed pods to give 2 hearts of Absorption when full on Health
 27/08/2013: Added Greenhouse, Fixed First Person Rendering Issues With Custom Rendered Blocks
 25/08/2013: Added Food Items (HighFlyer's etc) and 'Shining' Variants, Added New Refrence: FoodStat.java, Updated a few textures
 12/08/2013: Removed CreatorsCustard.png, Added Pod Items

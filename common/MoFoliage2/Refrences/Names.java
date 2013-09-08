@@ -41,4 +41,5 @@ public class Names
     
     //Gui Elements
     public static final String CONTAINER_PLANT_MIXER = "Plant Mixer";
+    public static final String CONTAINER_GREEN_HOUSE = "Green House";
 }

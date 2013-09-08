@@ -1,6 +1,6 @@
 package MoFoliage2.Blocks;
 
-import MoFoliage2.BaseClasses.MetadataNameHandler;
+import MoFoliage2.Core.MetadataNameHandler;
 import MoFoliage2.Items.ItemPod;
 import MoFoliage2.Refrences.BlockIds;
 import MoFoliage2.Refrences.Names;

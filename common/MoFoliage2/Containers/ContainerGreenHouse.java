@@ -1,8 +1,5 @@
 package MoFoliage2.Containers;
 
-import MoFoliage2.Containers.Slots.SlotBowl;
-import MoFoliage2.Containers.Slots.SlotNull;
-import MoFoliage2.TileEntities.TileEntityPlantMixer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -10,20 +7,18 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.tileentity.TileEntityFurnace;
+import MoFoliage2.Containers.Slots.SlotNull;
+import MoFoliage2.TileEntities.TileEntityGreenHouse;
 
-public class ContainerPlantMixer extends Container
+public class ContainerGreenHouse extends Container
 {
-    public ContainerPlantMixer(InventoryPlayer inventoryPlayer, TileEntityPlantMixer tilePlantMixer)
+    public ContainerGreenHouse(InventoryPlayer inventoryPlayer, TileEntityGreenHouse tileGreenHouse)
     {
-        this.addSlotToContainer(new Slot(tilePlantMixer, tilePlantMixer.POD_ONE_ID, 25, 17));
+        this.addSlotToContainer(new Slot(tileGreenHouse, tileGreenHouse.SEED_INPUT_ID, 11, 56));
         
-        this.addSlotToContainer(new Slot(tilePlantMixer, tilePlantMixer.POD_TWO_ID, 56, 17));
+        this.addSlotToContainer(new Slot(tileGreenHouse, tileGreenHouse.FUEL_ID, 126, 60));
         
-        this.addSlotToContainer(new SlotBowl(tilePlantMixer, tilePlantMixer.BOWL_ID, 41, 39));
-        
-        this.addSlotToContainer(new Slot(tilePlantMixer, tilePlantMixer.FUEL_ID, 41, 62));
-        
-        this.addSlotToContainer(new SlotNull(tilePlantMixer, tilePlantMixer.OUTPUT_ID, 116, 35));
+        this.addSlotToContainer(new SlotNull(tileGreenHouse, tileGreenHouse.POD_OUTPUT_ID, 46, 56));
         
         int i;
         for (i = 0; i < 3; ++i)

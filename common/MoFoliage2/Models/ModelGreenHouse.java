@@ -178,6 +178,7 @@ public class ModelGreenHouse extends ModelBase
   
   public void renderModel(float f1, boolean isLeft, boolean isRight, boolean isForward, boolean isBackward)
   {
+      //TopFront and Top2 were misnamed and needed to be reversed
       Base.render(f1);
       Top.render(f1);
       TopFront.render(f1);

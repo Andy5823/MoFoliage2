@@ -1,4 +1,4 @@
-package MoFoliage2.BaseClasses;
+package MoFoliage2.Core;
 
 import MoFoliage2.Refrences.BlockIds;
 import MoFoliage2.Refrences.ItemIds;
