@@ -1,5 +1,7 @@
 package MoFoliage2.Blocks;
 
+import MoFoliage2.MoFoliage;
+import MoFoliage2.Core.LiquidHandler;
 import MoFoliage2.Core.MetadataNameHandler;
 import MoFoliage2.Items.ItemPod;
 import MoFoliage2.Refrences.BlockIds;
@@ -8,6 +10,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.Fluid;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -19,6 +22,7 @@ public class ModBlocks
     public static Block CrystalizedIron;
     public static Block StainedGlass;
     public static Block GreenHouse;
+    public static Block LiquidGold;
     
     public static void InitializeBlocks()
     {
@@ -28,6 +32,7 @@ public class ModBlocks
         CrystalizedIron = new BlockCrystalizedIron(BlockIds.CRYSTALIZED_IRON_ID);
         StainedGlass = new BlockStainedGlass(BlockIds.STAINED_GLASS_ID);
         GreenHouse = new BlockGreenHouse(BlockIds.GREEN_HOUSE_ID);
+        LiquidGold = new BlockLiquidGold(BlockIds.LIQUID_GOLD_ID, LiquidHandler.MoFoLiquidGold);
         
         RegisterBlocks();
     }
@@ -40,6 +45,7 @@ public class ModBlocks
         GameRegistry.registerBlock(CrystalizedIron);
         GameRegistry.registerBlock(StainedGlass);
         GameRegistry.registerBlock(GreenHouse);
+        GameRegistry.registerBlock(LiquidGold);
         
         InitializeNames();
     }
@@ -53,6 +59,7 @@ public class ModBlocks
         LanguageRegistry.addName(CrystalizedIron, "Crystalized Iron");
         LanguageRegistry.addName(StainedGlass, "Stained Glass");
         LanguageRegistry.addName(GreenHouse, "Miniture Green House");
+        LanguageRegistry.addName(LiquidGold, "Liquid Gold");
         
         InitializeRecipes();
     }

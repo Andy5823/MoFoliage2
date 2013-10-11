@@ -67,7 +67,7 @@ implements IPlantable
     {
         Block soil = blocksList[par1World.getBlockId(par2, par3 - 1, par4)];
         return (par1World.getFullBlockLightValue(par2, par3, par4) >= 8 || par1World.canBlockSeeTheSky(par2, par3, par4)) && 
-                (soil != null && soil == Block.tilledField);
+                (soil != null && (soil == Block.grass || soil == Block.dirt));
     }
     
     public void onNeighborBlockChange(World par1World, int par2, int par3, int par4, int par5)

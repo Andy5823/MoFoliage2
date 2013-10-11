@@ -1,6 +1,8 @@
 package MoFoliage2.Core;
 
 import net.minecraftforge.client.MinecraftForgeClient;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import MoFoliage2.Blocks.ModBlocks;
@@ -9,6 +11,7 @@ import MoFoliage2.Client.Renders.RenderPlantMixer;
 import MoFoliage2.Client.Renders.Blocks.BlockRenderGreenHouse;
 import MoFoliage2.Client.Renders.Blocks.BlockRenderPlantMixer;
 import MoFoliage2.Refrences.BlockIds;
+import MoFoliage2.Refrences.Names;
 import MoFoliage2.Refrences.Refrence;
 import MoFoliage2.Refrences.RenderIds;
 import MoFoliage2.TileEntities.TileEntityGreenHouse;

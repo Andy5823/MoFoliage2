@@ -1,5 +1,6 @@
 package MoFoliage2.Refrences;
 
+import MoFoliage2.Core.ConfigurationFile;
 import MoFoliage2.Core.ResourceLocationHelper;
 import net.minecraft.util.ResourceLocation;
 
@@ -23,4 +24,5 @@ public class Textures
     
     //Villager Texture
     public static ResourceLocation MO_FO_VILLAGER = ResourceLocationHelper.getResourceLocation(VILLAGER_TEXTURE_LOCATION + "MoFoVillager.png");
+    static{if(ConfigurationFile.villagerSwag){MO_FO_VILLAGER = ResourceLocationHelper.getResourceLocation(VILLAGER_TEXTURE_LOCATION + "MoFoVillager2.png");}}
 }

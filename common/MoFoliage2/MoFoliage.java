@@ -2,9 +2,11 @@ package MoFoliage2;
 
 import MoFoliage2.Blocks.ModBlocks;
 import MoFoliage2.Blocks.PodTraits;
+import MoFoliage2.Core.BucketHandler;
 import MoFoliage2.Core.ClientProxy;
 import MoFoliage2.Core.CommonProxy;
 import MoFoliage2.Core.ConfigurationFile;
+import MoFoliage2.Core.LiquidHandler;
 import MoFoliage2.Core.MoFoCreativeTab;
 import MoFoliage2.Core.VillagerRegistring;
 import MoFoliage2.Items.ModItems;
@@ -43,11 +45,15 @@ public class MoFoliage
         
         ConfigurationFile.HandleConfig(config);
         
+        LiquidHandler.registerLiquid();
+        
         VillagerRegistring.registerVillagers();
         
         ModBlocks.InitializeBlocks();
         
         ModItems.InitializeItems();
+        
+        BucketHandler.INSTANCE.buckets.put(ModBlocks.LiquidGold, ModItems.LiquidGoldBucket);
     }
     
     @Init

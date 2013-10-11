@@ -24,6 +24,9 @@ public class Names
     public static final String CRYSTALIZED_IRON_NAME = "CrystalizedIron";
     public static final String STAINED_GLASS_NAME = "MultiGlass";
     public static final String GREEN_HOUSE_NAME = "GreenHouse";
+    public static final String GOLD_FLOWING = "LiquidGoldFlow";
+    public static final String GOLD_STILL = "liquidGoldStill";
+    public static final String LIQUID_GOLD = "liquidGold";
     
     //Items
     public static final String POD_SEEDS_NAME = "PodSeeds";
@@ -38,6 +41,8 @@ public class Names
     public static final String STRENGTH_POD_NAME = "StrengthPod";
     public static final String WATER_POD_NAME = "WaterPod";
     public static final String CRYSTALIZED_IRON_INGOT_NAME = "CrystalizedIron";
+    public static final String LIQUID_GOLD_BUCKET = "LiquidGoldBucket";
+    public static final String POD_PENDANT = "Pendant";
     
     //Gui Elements
     public static final String CONTAINER_PLANT_MIXER = "Plant Mixer";

@@ -1,5 +1,6 @@
 package MoFoliage2.Core;
 
+import MoFoliage2.Blocks.ModBlocks;
 import MoFoliage2.Client.Gui.GuiGreenHouse;
 import MoFoliage2.Client.Gui.GuiPlantMixer;
 import MoFoliage2.Containers.ContainerGreenHouse;
@@ -10,6 +11,8 @@ import MoFoliage2.TileEntities.TileEntityGreenHouse;
 import MoFoliage2.TileEntities.TileEntityPlantMixer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
 

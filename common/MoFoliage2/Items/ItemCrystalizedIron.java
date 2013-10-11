@@ -4,7 +4,6 @@ import MoFoliage2.Refrences.Names;
 
 public class ItemCrystalizedIron extends ItemBase
 {
-
     public ItemCrystalizedIron(int Id)
     {
         super(Id);

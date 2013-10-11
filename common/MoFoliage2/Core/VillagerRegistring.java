@@ -21,7 +21,7 @@ public class VillagerRegistring
         
         //VillagerRegistry.instance().addExtraVillageComponents(arraylist, random, 3);
         
-        VillagerRegistry.instance().registerVillagerId(VillagerId.MOFO_VILLAGER_ID);
+VillagerRegistry.instance().registerVillagerId(VillagerId.MOFO_VILLAGER_ID);
         
         VillagerRegistry.instance().registerVillagerSkin(VillagerId.MOFO_VILLAGER_ID, Textures.MO_FO_VILLAGER);
         
@@ -30,9 +30,11 @@ public class VillagerRegistring
         
         VillagerRegistry.instance().registerVillageTradeHandler(VillagerId.MOFO_VILLAGER_ID, tradeHandler);
         
-        
-        VillageCreationHandler villageCreationHandler = new VillageCreationHandler();
-        
-        VillagerRegistry.instance().registerVillageCreationHandler(villageCreationHandler);
+        if(ConfigurationFile.villagersSpawn)
+        {
+            VillageCreationHandler villageCreationHandler = new VillageCreationHandler();
+            
+            VillagerRegistry.instance().registerVillageCreationHandler(villageCreationHandler);
+        }
     }
 }
