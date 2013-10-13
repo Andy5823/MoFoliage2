@@ -13,6 +13,7 @@ import MoFoliage2.Items.ModItems;
 import MoFoliage2.Refrences.Refrence;
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PostInit;
@@ -31,12 +32,12 @@ public class MoFoliage
     @Instance(Refrence.MOD_ID)
     public static MoFoliage instance;
     
-    @SidedProxy(clientSide = "MoFoliage2.Core.ClientProxy", serverSide = "MoFoliage2.Core.CommonProxy")
+    @SidedProxy(clientSide = Refrence.CLIENT_PROXY_CLASS, serverSide = Refrence.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
     
     public static MoFoCreativeTab tab = new MoFoCreativeTab(Refrence.MOD_NAME);
     
-    @PreInit
+    @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         System.out.println("[Mo' Foliage 2]: Pre-Initialization");
@@ -56,7 +57,7 @@ public class MoFoliage
         BucketHandler.INSTANCE.buckets.put(ModBlocks.LiquidGold, ModItems.LiquidGoldBucket);
     }
     
-    @Init
+    @EventHandler
     public void load(FMLInitializationEvent event)
     {
         System.out.println("[Mo' Foliage 2]: Load");
@@ -68,7 +69,7 @@ public class MoFoliage
         proxy.registerTileEnities();
     }
     
-    @PostInit
+    @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
         System.out.println("[Mo' Foliage 2]: Post-Initialization");

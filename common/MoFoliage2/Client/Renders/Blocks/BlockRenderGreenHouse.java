@@ -25,7 +25,8 @@ public class BlockRenderGreenHouse implements IItemRenderer
     private void renderItemBlock(float x, float y, float z, boolean needsRotating)
     {
         Tessellator tesselator = Tessellator.instance;
-        FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_GREEN_HOUSE);
+        //FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_GREEN_HOUSE);
+        FMLClientHandler.instance().getClient().renderEngine.bindTexture(Textures.MODEL_GREEN_HOUSE);
         GL11.glPushMatrix(); //start
         if(needsRotating)
         {
@@ -59,7 +60,7 @@ public class BlockRenderGreenHouse implements IItemRenderer
     }
     
     @Override
-    public void renderItem(ItemRenderType type, ItemStack item, Object... data) 
+    public void renderItem(ItemRenderType type, ItemStack item, Object... data)
     {
         switch (type) 
         {

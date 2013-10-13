@@ -21,7 +21,8 @@ public class BlockRenderPlantMixer implements IItemRenderer
     private void renderItemBlock(float x, float y, float z, boolean needsRotating)
     {
         Tessellator tesselator = Tessellator.instance;
-        FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_PLANT_MIXER);
+        //FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_PLANT_MIXER);
+        FMLClientHandler.instance().getClient().renderEngine.bindTexture(Textures.MODEL_PLANT_MIXER);
         GL11.glPushMatrix(); //start
         if(needsRotating)
         {

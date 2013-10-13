@@ -54,7 +54,8 @@ public class RenderGreenHouse extends TileEntitySpecialRenderer
                 j = 90;
         }
         GL11.glRotatef(j, 0.0F, 1.0F, 0F);
-        FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_GREEN_HOUSE);
+        //FMLClientHandler.instance().getClient().renderEngine.func_110577_a(Textures.MODEL_GREEN_HOUSE);
+        FMLClientHandler.instance().getClient().renderEngine.bindTexture(Textures.MODEL_GREEN_HOUSE);
         GL11.glPushMatrix();
         GL11.glPushAttrib(GL11.GL_ENABLE_BIT);
         //GL11.glEnable(GL11.GL_CULL_FACE);

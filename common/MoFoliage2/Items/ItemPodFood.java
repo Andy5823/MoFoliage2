@@ -149,7 +149,7 @@ public class ItemPodFood extends ItemBaseFood
                 super.onFoodEaten(par1ItemStack, par2World, par3EntityPlayer);
                 break;
         }
-        if(par3EntityPlayer.func_110143_aJ() == 20)
+        if(par3EntityPlayer.getHealth() == 20)
         {
             par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 0));
         }

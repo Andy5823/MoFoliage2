@@ -17,11 +17,11 @@ public class ComponentMoFoVillageHouse extends ComponentVillage
 {
     private int averageGroundLevel = -1;
     
-    private static final int HEIGHT = 10;
+    /*private static final int HEIGHT = 10;
     private final int SOUTH = 3;
     private final int WEST  = 0;
     private final int NORTH = 2;
-    private final int EAST  = 1;
+    private final int EAST  = 1;*/
     
     protected ComponentMoFoVillageHouse(ComponentVillageStartPiece startPiece, int type, Random random, StructureBoundingBox _boundingBox, int direction){
         super(startPiece, type);

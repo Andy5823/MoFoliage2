@@ -136,7 +136,7 @@ implements IPlantable
                 {
                     podTrait1 = "Light";
                 }
-                System.out.println(podTrait1);
+                //System.out.println(podTrait1);
                 break;
                 
             case 2:
@@ -152,7 +152,7 @@ implements IPlantable
                 {
                     podTrait2 = "Arid";
                 }
-                System.out.println(podTrait2);
+                //System.out.println(podTrait2);
                 break;
             case 3:
                 if(WorldChecker.checkForLava(par1World, x, y, z) <= 2)
@@ -167,7 +167,7 @@ implements IPlantable
                 {
                     podTrait3 = "Cold";
                 }
-                System.out.println(podTrait3);
+                //System.out.println(podTrait3);
                 break;
         }
     }

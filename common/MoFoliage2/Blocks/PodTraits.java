@@ -20,43 +20,50 @@ public class PodTraits
     
     public static String GetClosestPodTrait(String trait1, String trait2, String trait3)
     {
-        if(trait1 == BLINDNESS_POD_TRAITS[1] && trait2 == BLINDNESS_POD_TRAITS[2] && trait3 == BLINDNESS_POD_TRAITS[3])
+    	System.out.println(trait1);
+    	System.out.println(trait2);
+    	System.out.println(trait3);
+    	
+    	System.out.println("EXAMPLE:"+BLINDNESS_POD_TRAITS[0]);
+    	System.out.println("EXAMPLE:"+BLINDNESS_POD_TRAITS[1]);
+    	System.out.println("EXAMPLE:"+BLINDNESS_POD_TRAITS[2]);
+        if(trait1.equalsIgnoreCase(BLINDNESS_POD_TRAITS[0]) && trait2.equalsIgnoreCase(BLINDNESS_POD_TRAITS[1]) && trait3.equalsIgnoreCase(BLINDNESS_POD_TRAITS[2]))
         {
              return Names.BLINDNESS_POD_BLOCK_NAME;
         }
-        if(trait1 == DARK_POD_TRAITS[1] && trait2 == DARK_POD_TRAITS[2] && trait3 == DARK_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(DARK_POD_TRAITS[0]) && trait2.equalsIgnoreCase(DARK_POD_TRAITS[1]) && trait3.equalsIgnoreCase(DARK_POD_TRAITS[2]))
         {
              return Names.DARK_POD_BLOCK_NAME;
         }
-        if(trait1 == FIRE_POD_TRAITS[1] && trait2 == FIRE_POD_TRAITS[2] && trait3 == FIRE_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(FIRE_POD_TRAITS[0]) && trait2.equalsIgnoreCase(FIRE_POD_TRAITS[1]) && trait3.equalsIgnoreCase(FIRE_POD_TRAITS[2]))
         {
              return Names.FIRE_POD_BLOCK_NAME;
         }
-        if(trait1 == HASTE_POD_TRAITS[1] && trait2 == HASTE_POD_TRAITS[2] && trait3 == HASTE_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(HASTE_POD_TRAITS[0]) && trait2.equalsIgnoreCase(HASTE_POD_TRAITS[1]) && trait3.equalsIgnoreCase(HASTE_POD_TRAITS[2]))
         {
              return Names.HASTE_POD_BLOCK_NAME;
         }
-        if(trait1 == JUMP_POD_TRAITS[1] && trait2 == JUMP_POD_TRAITS[2] && trait3 == JUMP_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(JUMP_POD_TRAITS[0]) && trait2.equalsIgnoreCase(JUMP_POD_TRAITS[1]) && trait3.equalsIgnoreCase(JUMP_POD_TRAITS[2]))
         {
              return Names.JUMP_POD_BLOCK_NAME;
         }
-        if(trait1 == LAVA_POD_TRAITS[1] && trait2 == LAVA_POD_TRAITS[2] && trait3 == LAVA_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(LAVA_POD_TRAITS[0]) && trait2.equalsIgnoreCase(LAVA_POD_TRAITS[1]) && trait3.equalsIgnoreCase(LAVA_POD_TRAITS[2]))
         {
              return Names.LAVA_POD_BLOCK_NAME;
         }
-        if(trait1 == LOVE_POD_TRAITS[1] && trait2 == LOVE_POD_TRAITS[2] && trait3 == LOVE_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(LOVE_POD_TRAITS[0]) && trait2.equalsIgnoreCase(LOVE_POD_TRAITS[1]) && trait3.equalsIgnoreCase(LOVE_POD_TRAITS[2]))
         {
              return Names.LOVE_POD_BLOCK_NAME;
         }
-        if(trait1 == SPEED_POD_TRAITS[1] && trait2 == SPEED_POD_TRAITS[2] && trait3 == SPEED_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(SPEED_POD_TRAITS[0]) && trait2.equalsIgnoreCase(SPEED_POD_TRAITS[1]) && trait3.equalsIgnoreCase(SPEED_POD_TRAITS[2]))
         {
              return Names.SPEED_POD_BLOCK_NAME;
         }
-        if(trait1 == STRENGTH_POD_TRAITS[1] && trait2 == STRENGTH_POD_TRAITS[2] && trait3 == STRENGTH_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(STRENGTH_POD_TRAITS[0]) && trait2.equalsIgnoreCase(STRENGTH_POD_TRAITS[1]) && trait3.equalsIgnoreCase(STRENGTH_POD_TRAITS[2]))
         {
              return Names.STRENGTH_POD_BLOCK_NAME;
         }
-        if(trait1 == WATER_POD_TRAITS[1] && trait2 == WATER_POD_TRAITS[2] && trait3 == WATER_POD_TRAITS[3])
+        if(trait1.equalsIgnoreCase(WATER_POD_TRAITS[0]) && trait2.equalsIgnoreCase(WATER_POD_TRAITS[1]) && trait3.equalsIgnoreCase(WATER_POD_TRAITS[2]))
         {
              return Names.WATER_POD_BLOCK_NAME;
         }
