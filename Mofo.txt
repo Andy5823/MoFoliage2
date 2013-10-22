@@ -15,5 +15,5 @@ ExplosiveTreat - Makes player explode - Fire + Haste
 Steriod Pie - Strenth 3 for 30 seconds - Strenth + Dark
 VioletPudding - Regen 1 and jump boost 1 for 30 seconds - Jump + Blindness
 SinkHole Sauce - Negetive jump boost - Jump + Dark
-Heart Melting Blend - Wither and poison for 30 seconds - Haste + Dark
+Heart Melting Blend - Wither and poison for 30 seconds - Love + Dark
 Glowing Custard - Gives Exp - Lava + Jump

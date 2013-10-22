@@ -99,13 +99,13 @@ implements IPlantable
             {
                 float f = this.getGrowthRate(par1World, par2, par3, par4);
 
-                if (par5Random.nextInt((int)(/*25.0F / f*/ 5F) + 1) == 0)
-                {
+                //if (par5Random.nextInt((int)(/*25.0F / f*/ 5F) + 1) == 0)
+                //{
                     ++l;
                     par1World.setBlockMetadataWithNotify(par2, par3, par4, l, 2);
                     
                     handlePodTraits(par1World, l, par2, par3, par4);
-                }
+                //}
             }
             else if(l == 3)
             {
@@ -128,7 +128,7 @@ implements IPlantable
         switch(meta)
         {
             case 1:
-                if(par1World.getBlockLightValue(x, y, z) < 8)
+                if(par1World.getBlockLightValue(x, y+1, z) < 8)
                 {
                     podTrait1 = "Dark";
                 }
@@ -140,11 +140,11 @@ implements IPlantable
                 break;
                 
             case 2:
-                if(WorldChecker.checkForWater(par1World, x, y, z) <= 2)
+                if(WorldChecker.checkForWater(par1World, x, y-1, z) <= 2 && WorldChecker.checkForWater(par1World, x, y-1, z) != 0)
                 {
                     podTrait2 = "Damp";
                 }
-                else if(WorldChecker.checkForWater(par1World, x, y, z) <= 4)
+                else if(WorldChecker.checkForWater(par1World, x, y-1, z) <= 4 && WorldChecker.checkForWater(par1World, x, y-1, z) != 0)
                 {
                     podTrait2 = "Normal";
                 }
@@ -155,11 +155,11 @@ implements IPlantable
                 //System.out.println(podTrait2);
                 break;
             case 3:
-                if(WorldChecker.checkForLava(par1World, x, y, z) <= 2)
+                if(WorldChecker.checkForLava(par1World, x, y-1, z) <= 2 && WorldChecker.checkForLava(par1World, x, y-1, z) != 0)
                 {
                     podTrait3 = "Hot";
                 }
-                else if(WorldChecker.checkForLava(par1World, x, y, z) <= 4)
+                else if(WorldChecker.checkForLava(par1World, x, y-1, z) <= 4 && WorldChecker.checkForLava(par1World, x, y-1, z) != 0)
                 {
                     podTrait3 = "Warm";
                 }

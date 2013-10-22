@@ -24,9 +24,6 @@ public class PodTraits
     	System.out.println(trait2);
     	System.out.println(trait3);
     	
-    	System.out.println("EXAMPLE:"+BLINDNESS_POD_TRAITS[0]);
-    	System.out.println("EXAMPLE:"+BLINDNESS_POD_TRAITS[1]);
-    	System.out.println("EXAMPLE:"+BLINDNESS_POD_TRAITS[2]);
         if(trait1.equalsIgnoreCase(BLINDNESS_POD_TRAITS[0]) && trait2.equalsIgnoreCase(BLINDNESS_POD_TRAITS[1]) && trait3.equalsIgnoreCase(BLINDNESS_POD_TRAITS[2]))
         {
              return Names.BLINDNESS_POD_BLOCK_NAME;
