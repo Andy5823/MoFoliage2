@@ -23,7 +23,7 @@ public class ModItems
     
     public static void InitializeItems()
     {
-        PodSeeds = new ItemSeeds(ItemIds.POD_SEEDS_ID, ModBlocks.PodSeeds.blockID);
+        PodSeeds = new ItemPodSeeds(ItemIds.POD_SEEDS_ID, ModBlocks.PodSeeds.blockID);
         CrystalizedIron = new ItemCrystalizedIron(ItemIds.CRYSTALIZED_IRON_ID);
         Pod = new ItemPodFood(ItemIds.POD_ID, FoodStats.DEFAULT_HEAL_AMOUNT, FoodStats.DEFAULT_SATURATION_AMOUNT, FoodStats.DEFAULT_WOLVES_STATUS);
         PodPendant = new ItemPendant(ItemIds.POD_PENDANT_ID);
@@ -48,7 +48,9 @@ public class ModItems
     {
     	GameRegistry.addShapedRecipe(new ItemStack(ModItems.LiquidGoldBucket, 1), new Object[]{"G", "B", 'B', Item.bucketLava, 'G', Block.blockGold});
     	
-    	GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.CrystalizedIron, 1), new Object[]{"GB", 'B', LiquidGoldBucket, 'G', Block.blockIron});
+    	GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.CrystalizedIron, 1), new Object[]{"IB", 'B', LiquidGoldBucket, 'I', Block.blockIron});
+    	
+    	GameRegistry.addShapedRecipe(new ItemStack(CrystalizedIron, 0), new Object[]{"C", 'C', ModBlocks.CrystalizedIron});
     	
         GameRegistry.addShapelessRecipe(new ItemStack(TestingCookie, 1), Item.cookie, ModBlocks.Pod);
     }

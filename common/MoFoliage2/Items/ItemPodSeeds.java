@@ -8,11 +8,11 @@ import net.minecraftforge.common.ForgeDirection;
 import MoFoliage2.MoFoliage;
 import MoFoliage2.Refrences.Names;
 
-public class ItemSeeds extends ItemBase
+public class ItemPodSeeds extends ItemBase
 {
     public int blockType;
     
-    public ItemSeeds(int Id, int BlockId)
+    public ItemPodSeeds(int Id, int BlockId)
     {
         super(Id);
         blockType = BlockId;
