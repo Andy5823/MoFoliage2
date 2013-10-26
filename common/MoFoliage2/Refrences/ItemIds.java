@@ -6,5 +6,6 @@ public class ItemIds
     public static int CRYSTALIZED_IRON_ID;
     public static int POD_ID;
     public static int LIQUID_GOLD_BUCKET_ID;
-    public static int POD_PENDANT;
+    public static int POD_PENDANT_ID;
+    public static int TESTING_COOKIE_ID;
 }

@@ -18,7 +18,7 @@ import net.minecraftforge.fluids.Fluid;
 public class BlockLiquidGold extends BlockFluidClassic
 {
     @SideOnly(Side.CLIENT)
-    protected Icon[] blockIcon;
+    public static Icon[] blockIcon;
     
     public BlockLiquidGold(int id, Fluid fluid)
     {

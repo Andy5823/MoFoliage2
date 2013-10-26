@@ -25,4 +25,8 @@ public class Textures
     //Villager Texture
     public static ResourceLocation MO_FO_VILLAGER = ResourceLocationHelper.getResourceLocation(VILLAGER_TEXTURE_LOCATION + "MoFoVillager.png");
     static{if(ConfigurationFile.villagerSwag){MO_FO_VILLAGER = ResourceLocationHelper.getResourceLocation(VILLAGER_TEXTURE_LOCATION + "MoFoVillager2.png");}}
+    
+    //Fluid Textures
+    public static ResourceLocation LIQUID_GOLD_FLOW = ResourceLocationHelper.getResourceLocation("/blocks/liquidGold_flow.png");
+    public static ResourceLocation LIQUID_GOLD_STILL = ResourceLocationHelper.getResourceLocation("/blocks/liquidGold_still.png");
 }

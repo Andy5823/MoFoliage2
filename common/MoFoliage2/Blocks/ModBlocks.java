@@ -11,6 +11,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.oredict.OreDictionary;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -32,7 +35,6 @@ public class ModBlocks
         CrystalizedIron = new BlockCrystalizedIron(BlockIds.CRYSTALIZED_IRON_ID);
         StainedGlass = new BlockStainedGlass(BlockIds.STAINED_GLASS_ID);
         GreenHouse = new BlockGreenHouse(BlockIds.GREEN_HOUSE_ID);
-        LiquidGold = new BlockLiquidGold(BlockIds.LIQUID_GOLD_ID, LiquidHandler.MoFoLiquidGold);
         
         RegisterBlocks();
     }
@@ -45,7 +47,6 @@ public class ModBlocks
         GameRegistry.registerBlock(CrystalizedIron);
         GameRegistry.registerBlock(StainedGlass);
         GameRegistry.registerBlock(GreenHouse);
-        GameRegistry.registerBlock(LiquidGold);
         
         InitializeNames();
     }
@@ -59,15 +60,16 @@ public class ModBlocks
         LanguageRegistry.addName(CrystalizedIron, "Crystalized Iron");
         LanguageRegistry.addName(StainedGlass, "Stained Glass");
         LanguageRegistry.addName(GreenHouse, "Miniture Green House");
-        LanguageRegistry.addName(LiquidGold, "Liquid Gold");
-        
-        InitializeRecipes();
     }
     
     public static void InitializeRecipes()
     {
         GameRegistry.addRecipe(new ItemStack(StainedGlass, 8), new Object[]{
             "GGG", "GDG", "GGG", 'G', Block.glass, 'D', new ItemStack(Item.dyePowder, 1, 2)
+        });
+        
+        GameRegistry.addRecipe(new ItemStack(PlantMixer, 1), new Object[]{
+            "WWW", "WBW", "WWW", 'W', Block.planks, 'B', Item.bucketEmpty
         });
     }
 }

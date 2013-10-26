@@ -26,10 +26,9 @@ public class ModItems
         PodSeeds = new ItemSeeds(ItemIds.POD_SEEDS_ID, ModBlocks.PodSeeds.blockID);
         CrystalizedIron = new ItemCrystalizedIron(ItemIds.CRYSTALIZED_IRON_ID);
         Pod = new ItemPodFood(ItemIds.POD_ID, FoodStats.DEFAULT_HEAL_AMOUNT, FoodStats.DEFAULT_SATURATION_AMOUNT, FoodStats.DEFAULT_WOLVES_STATUS);
-        LiquidGoldBucket = new ItemBucketGold(ItemIds.LIQUID_GOLD_BUCKET_ID, ModBlocks.LiquidGold.blockID);
-        PodPendant = new ItemPendant(ItemIds.POD_PENDANT);
+        PodPendant = new ItemPendant(ItemIds.POD_PENDANT_ID);
         
-        TestingCookie = new ItemTestingCookie(9001);
+        TestingCookie = new ItemTestingCookie(ItemIds.TESTING_COOKIE_ID);
         
         InitializeNames();
     }
@@ -40,21 +39,18 @@ public class ModItems
         
         LanguageRegistry.addName(PodSeeds, "Pod Seeds");
         LanguageRegistry.addName(CrystalizedIron, "Crystalized Iron Ingot");
-        LanguageRegistry.addName(LiquidGoldBucket, "Bucket of Liquid Gold");
         LanguageRegistry.addName(PodPendant, "Pod Pendant");
         
         LanguageRegistry.addName(TestingCookie, "Testing Cookie");
-        
-        InitializeRecipes();
     }
     
     public static void InitializeRecipes()
     {
-        GameRegistry.addShapedRecipe(new ItemStack(LiquidGoldBucket, 1), new Object[]{"G", "B", 'B', Item.bucketLava, 'G', Block.blockGold});
-        
+    	GameRegistry.addShapedRecipe(new ItemStack(ModItems.LiquidGoldBucket, 1), new Object[]{"G", "B", 'B', Item.bucketLava, 'G', Block.blockGold});
+    	
+    	GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.CrystalizedIron, 1), new Object[]{"GB", 'B', LiquidGoldBucket, 'G', Block.blockIron});
+    	
         GameRegistry.addShapelessRecipe(new ItemStack(TestingCookie, 1), Item.cookie, ModBlocks.Pod);
-        
-        InitializeHooks();
     }
     
     public static void InitializeHooks()
