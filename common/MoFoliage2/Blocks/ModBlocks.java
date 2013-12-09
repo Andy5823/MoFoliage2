@@ -61,15 +61,4 @@ public class ModBlocks
         LanguageRegistry.addName(StainedGlass, "Stained Glass");
         LanguageRegistry.addName(GreenHouse, "Miniture Green House");
     }
-    
-    public static void InitializeRecipes()
-    {
-        GameRegistry.addRecipe(new ItemStack(StainedGlass, 8), new Object[]{
-            "GGG", "GDG", "GGG", 'G', Block.glass, 'D', new ItemStack(Item.dyePowder, 1, 2)
-        });
-        
-        GameRegistry.addRecipe(new ItemStack(PlantMixer, 1), new Object[]{
-            "WWW", "WBW", "WWW", 'W', Block.planks, 'B', Item.bucketEmpty
-        });
-    }
 }

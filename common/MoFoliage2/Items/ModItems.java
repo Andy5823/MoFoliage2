@@ -44,17 +44,6 @@ public class ModItems
         LanguageRegistry.addName(TestingCookie, "Testing Cookie");
     }
     
-    public static void InitializeRecipes()
-    {
-    	GameRegistry.addShapedRecipe(new ItemStack(ModItems.LiquidGoldBucket, 1), new Object[]{"G", "B", 'B', Item.bucketLava, 'G', Block.blockGold});
-    	
-    	GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.CrystalizedIron, 1), new Object[]{"IB", 'B', LiquidGoldBucket, 'I', Block.blockIron});
-    	
-    	GameRegistry.addShapedRecipe(new ItemStack(CrystalizedIron, 0), new Object[]{"C", 'C', ModBlocks.CrystalizedIron});
-    	
-        GameRegistry.addShapelessRecipe(new ItemStack(TestingCookie, 1), Item.cookie, ModBlocks.Pod);
-    }
-    
     public static void InitializeHooks()
     {
         MinecraftForge.addGrassSeed(new ItemStack(PodSeeds), 15);

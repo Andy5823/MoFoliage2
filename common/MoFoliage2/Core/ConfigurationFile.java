@@ -24,12 +24,12 @@ public class ConfigurationFile
         BlockIds.LIQUID_GOLD_ID = config.getBlock("Liquid Gold Id", 2006).getInt();
         
         //Items
-        ItemIds.POD_SEEDS_ID = config.getItem("Pod Seeds Id", 10001).getInt();
-        ItemIds.CRYSTALIZED_IRON_ID = config.getItem("Crystalized Iron Id", 10002).getInt();
-        ItemIds.POD_ID = config.getItem("Pod Item Id", 10003).getInt();
-        ItemIds.LIQUID_GOLD_BUCKET_ID = config.getItem("Liquid Gold Bucket ID", 10004).getInt();
-        ItemIds.POD_PENDANT_ID = config.getItem("Pod Pendant", 10005).getInt();
-        ItemIds.TESTING_COOKIE_ID = config.getItem("Testing Cookie", 10006).getInt();
+        ItemIds.POD_SEEDS_ID = config.getItem("Pod Seeds Id", 9001).getInt();
+        ItemIds.CRYSTALIZED_IRON_ID = config.getItem("Crystalized Iron Id", 9002).getInt();
+        ItemIds.POD_ID = config.getItem("Pod Item Id", 9003).getInt();
+        ItemIds.LIQUID_GOLD_BUCKET_ID = config.getItem("Liquid Gold Bucket ID", 9004).getInt();
+        ItemIds.POD_PENDANT_ID = config.getItem("Pod Pendant", 9005).getInt();
+        ItemIds.TESTING_COOKIE_ID = config.getItem("Testing Cookie", 9006).getInt();
         
         //General
         villagersSpawn = config.get(config.CATEGORY_GENERAL, "Do Custom Villagers Spawn", true).getBoolean(true);

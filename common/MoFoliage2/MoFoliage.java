@@ -10,6 +10,7 @@ import MoFoliage2.Core.LiquidHandler;
 import MoFoliage2.Core.MoFoCreativeTab;
 import MoFoliage2.Core.VillagerRegistring;
 import MoFoliage2.Items.ModItems;
+import MoFoliage2.Recipe.BlockItemRecipes;
 import MoFoliage2.Refrences.Refrence;
 import net.minecraft.block.Block;
 import net.minecraft.src.ModLoader;
@@ -86,8 +87,6 @@ public class MoFoliage
         
         LiquidHandler.MoFoLiquidGold.setIcons(ModBlocks.LiquidGold.getIcon(0, 1), ModBlocks.LiquidGold.getIcon(1, 1));
         
-        ModBlocks.InitializeRecipes();
-        
-        ModItems.InitializeRecipes();
+        BlockItemRecipes.HandleRecipes();
     }
 }
