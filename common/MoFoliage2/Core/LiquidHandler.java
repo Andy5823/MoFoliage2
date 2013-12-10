@@ -30,7 +30,7 @@ public class LiquidHandler
         LanguageRegistry.addName(ModBlocks.LiquidGold, "Liquid Gold");
         MoFoLiquidGold.setBlockID(ModBlocks.LiquidGold);
         ModItems.LiquidGoldBucket = new ItemBucketGold(ItemIds.LIQUID_GOLD_BUCKET_ID, ModBlocks.LiquidGold.blockID);
-        LanguageRegistry.addName(ModItems.LiquidGoldBucket, "Bucket of Liquid Gold");
+        LanguageRegistry.addName(ModItems.LiquidGoldBucket, "Liquid Gold Bucket");
         FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(MoFoLiquidGold.getName(), FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.LiquidGoldBucket, 1), new ItemStack(Item.bucketEmpty));
     }
 }
